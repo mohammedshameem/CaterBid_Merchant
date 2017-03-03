@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_contact_outer_layout" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10" 
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" 
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:background="#49A582">
+            
+            <TextView
+                android:id="@+id/add_contact_text" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fix_add_contact"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"/>
+            
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" 
+            android:layout_weight="8.5"
+            android:gravity="center" 
+            android:background="#2F7B5D">
+            
+            <ImageView 
+                android:id="@+id/add_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                 android:visibility="visible"
+                android:src="@drawable/add_review_icon"/>
+             <ImageView 
+                android:id="@+id/add_icondollar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:src="@drawable/dollar_white"/> 
+                 <ImageView 
+                android:id="@+id/add_iconavatarwithplus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:src="@drawable/avatarplus"/> 
+                
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

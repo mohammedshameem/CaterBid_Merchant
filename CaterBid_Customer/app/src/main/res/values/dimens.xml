@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Size of the textview common to all layout -->
+    <dimen name="textSize_header_xnormal">21sp</dimen>
+    <dimen name="textSize_header_normal">20sp</dimen>
+    <dimen name="textSize_header_medium">27sp</dimen>
+    <dimen name="textSize_header_Larger">35sp</dimen>
+    <dimen name="textSize_header_large">30sp</dimen>
+    <dimen name="textSize_header_xlarge">90sp</dimen>
+
+    <!-- Margin  Common to all layout -->
+
+    <dimen name="margin_xlarger">120dp</dimen>
+    <dimen name="margin_xlarge">100dp</dimen>
+    <dimen name="margin_little_bit_large">80dp</dimen>
+    <dimen name="margin_large">50dp</dimen>
+    <dimen name="margin_half_medium">25dp</dimen>
+    <dimen name="margin_half_mediumx">20dp</dimen>
+    <dimen name="margin_nxormal">15dp</dimen>
+    <dimen name="margin_popup">30dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_xsmall">5dp</dimen>
+    <dimen name="margin_xsmaller">3dp</dimen>
+    <dimen name="margin_very_small">4dp</dimen>
+    <dimen name="_margin_medium">15dp</dimen>
+
+    <!-- For slider menu -->
+
+    <dimen name="slidingmenu_offset">50dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="profile_icon_width">45dp</dimen>
+    <dimen name="profile_icon_height">45dp</dimen>
+    <dimen name="menu_items_height">48dp</dimen>
+    <dimen name="menu_item_image">30dp</dimen>
+    <dimen name="tick_icon_dimen">18dp</dimen>
+    <dimen name="margin_vvvy_small">4dp</dimen>
+    <dimen name="margin_vvy_small">8dp</dimen>
+    <dimen name="margin_vy_small">10dp</dimen>
+    <dimen name="dark_blue_layout_height">15dp</dimen>
+    <dimen name="sigin_inner_layout_height">70dp</dimen>
+
+    <!-- Custom ActionBar -->
+    <dimen name="custom_action_bar_height">50dp</dimen>
+    <dimen name="menu_selection_icon_dimen">24dp</dimen>
+    <dimen name="menu_selection_icon_negative_margin">-5dp</dimen>
+    <dimen name="menu_selection_icon_margin">5dp</dimen>
+    <dimen name="app_image_dimension">40dp</dimen>
+    <dimen name="search_icon_dimension">24dp</dimen>
+    <dimen name="image_icon_size">25dp</dimen>
+    <dimen name="texts_size">18sp</dimen>
+    
+    <!--Track Your Fix  -->
+    
+    <dimen name="track_your_fix_medium_text_size">18sp</dimen>
+    <dimen name="track_your_fix_width">15dp</dimen>
+    <dimen name="track_your_fix_height">15dp</dimen>
+    <dimen name="track_your_fix_medium_width">20dp</dimen>
+    <dimen name="track_your_fix_medium_height">20dp</dimen>
+    <dimen name="track_your_fix_heading_height">30dp</dimen>
+    <dimen name="track_your_fix_text_size">11sp</dimen>
+    <dimen name="view_height">0.5dp</dimen>
+    <dimen name="small_padding">3dp</dimen>
+    <dimen name="text_size">22sp</dimen>
+    
+    <dimen name="review_list_text_size">16sp</dimen>
+    <dimen name="review_list_text_date">13sp</dimen>
+    <dimen name="review_list_text_date_small">12sp</dimen>
+
+    <dimen name="track_your_fix_small_text_size">16sp</dimen>
+    
+    <dimen name="small_text">11sp</dimen>
+
+</resources>

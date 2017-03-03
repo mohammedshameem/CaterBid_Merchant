@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical" >
+
+ <!--    <include layout="@layout/custom_action_bar" /> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#EAEAEA"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#EAEAEA"
+            android:orientation="vertical"
+            android:weightSum="15" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".4"
+                    android:src="@drawable/location" />
+
+                <EditText
+                    android:id="@+id/postalcode"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.6"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:background="@drawable/editext_grey_stroke"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".4"
+                    android:src="@drawable/calender" />
+
+                <EditText
+                    android:id="@+id/datepicker"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.6"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:background="@drawable/editext_grey_stroke"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/dark_green"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    style="@style/CustomTextStyle_white_without_bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tellmoreaboutfix" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    style="@style/CustomTextStyle_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1.5"
+                    android:text="@string/areyoulooking"
+                    android:textColor="@color/textcolor_light" />
+
+                <Spinner
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:background="@drawable/spinner_drawable"
+                    android:gravity="center"
+                    android:hint="@string/areyoulooking" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/editext_grey_stroke"
+                android:gravity="top" >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:hint="@string/moredetail"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_insert"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    style="@style/CustomTextStyle_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="@string/insertimage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/pic_speaks"
+                    android:textColor="@color/textcolor_light" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/upload_one"
+                    android:textColor="@color/textcolor_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_findfixers"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/green_button_rounded_corners"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/CustomTextStyle_white_without_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/findfixers" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pending_fixcost_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_green_background"
+        android:orientation="vertical" >
+
+        <!-- Pending Payment Heading -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/margin_nxormal"
+            android:layout_marginRight="@dimen/margin_nxormal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:background="@color/light_green"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pending_titile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fix Posted"
+                android:textColor="@color/white"
+                android:textSize="@dimen/track_your_fix_medium_text_size" />
+
+            <TextView
+                android:id="@+id/pending_fix_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" $234"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="@dimen/track_your_fix_medium_text_size" />
+        </LinearLayout>
+
+        <!-- Content -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10"
+             >
+
+            <!-- Horizontal Image -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+             
+                android:layout_weight="3.6"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/greendot_pending"
+                    android:layout_width="@dimen/track_your_fix_width"
+                    android:layout_height="@dimen/track_your_fix_height"
+                    android:padding="@dimen/small_padding"
+                    android:src="@drawable/green_dot"
+                    android:visibility="visible" />
+
+                <!-- <LinearLayout
+                    android:id="@+id/pending_fix_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical" 
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:background="@drawable/grey_stroke_layout"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/plumbing_icon"
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        android:layout_marginTop="5dp" 
+                        android:visibility="visible"/>
+                    <TextView 
+                        android:id="@+id/image_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plumbing"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_weight="5"
+                        android:textColor="@color/black"
+                        android:visibility="visible"/>
+                </LinearLayout> -->
+                
+                
+                 <LinearLayout
+                    android:id="@+id/pending_fix_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:orientation="vertical" 
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:background="@color/white"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageViewCAtegoryPending"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/grey_stroke_layout"
+                        android:layout_weight="5" />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plumbing"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:layout_weight="5"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Horizontal Content -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_weight="1.9"
+                android:orientation="vertical"
+                android:weightSum="10" >
+
+                <!-- Vertical Content -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/pending_fix_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12/5/2015"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/track_your_fix_medium_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/booking_pending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking"
+                        android:textStyle="bold"
+                        android:textColor="#49A582" />
+
+                    <TextView
+                        android:id="@+id/pending_fix_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 12:00 to 15:00"
+                        android:textStyle="bold"
+                        android:textColor="#49A582" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xsmall"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/pending_fix_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Lorem ipsum dolor sit amet, consectetur a "
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Horizontal Arrow -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/pending_fix_right_arrow"
+                    android:layout_width="@dimen/track_your_fix_medium_width"
+                    android:layout_height="@dimen/track_your_fix_medium_height"
+                    android:src="@drawable/green_right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_height"
+            android:background="@color/light_greys"
+            android:layout_marginLeft="@dimen/margin_nxormal"
+            android:layout_marginRight="@dimen/margin_nxormal"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

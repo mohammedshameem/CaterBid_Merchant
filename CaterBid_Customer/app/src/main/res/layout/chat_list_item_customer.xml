@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal" >
+
+   <com.pkmmte.circularimageview.CircularImageView
+        android:id="@+id/chat_user_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile_image_null" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        
+        <TextView
+            android:id="@+id/chat_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatdialoguebox"
+            android:gravity="left"
+            android:padding="25dp"
+            android:layout_marginRight="-10dp"
+            android:text="ssssssssssss"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible"
+            >
+        </TextView>
+        <ImageView 
+            android:id="@+id/chat_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatdialoguebox"
+            android:visibility="gone"/>
+       
+
+        <TextView
+            android:id="@+id/chat_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/chatdialoguebox"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="35dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/chat_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/chatdialoguebox"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:paddingTop="25dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/chat_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/chat_pic"
+            android:layout_alignTop="@+id/chat_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="11 june"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/chat_date"
+            android:layout_alignBottom="@+id/chat_date"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout> -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+     android:layout_marginBottom="10dp"
+         >
+           <com.pkmmte.circularimageview.CircularImageView
+        android:id="@+id/chat_user_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/profile_image_null" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+      android:layout_marginLeft="58dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" >
+<!-- 
+        <TextView
+            android:id="@+id/chat_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatdialoguebox"
+            android:gravity="left"
+            android:padding="25dp"
+            android:layout_marginRight="-10dp"
+            android:text="ssssssssssss"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible"
+            >
+        </TextView>
+        <ImageView 
+            android:id="@+id/chat_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatdialoguebox"
+            android:visibility="gone"/> -->
+                   <TextView
+            android:id="@+id/chat_content"
+            android:layout_marginLeft="0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatdialoguebox"
+            android:gravity="left"
+            android:paddingTop="35dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible"
+            android:layout_marginTop="18dp"
+            >
+        </TextView>
+
+         <ImageView
+             android:id="@+id/chat_pic"
+             android:layout_width="fill_parent"
+             android:layout_height="200dp"
+             android:layout_alignParentRight="true"
+             android:layout_marginTop="18dp"
+             android:background="@drawable/chatdialoguebox"
+             android:gravity="center"
+             android:paddingBottom="10dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="30dp"
+             android:paddingTop="25dp"
+             android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/chat_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="18dp"
+            android:text="11 june"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/chat_date"
+            android:layout_alignBottom="@+id/chat_date"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+   
+</RelativeLayout>

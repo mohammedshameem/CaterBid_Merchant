@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparency">#55000000</color>
+    <color name="transparency_full">#AA000000</color>
+    <color name="app_green_color">#98C942</color>
+    <color name="app_blue_color">#0066CC</color>
+    <color name="view_grey_color">#9C9C9C</color>
+    <color name="need_hlp_blue">#48A582</color>
+    <color name="app_bg_grey">#E4E2D3</color>
+    <color name="light_grey_bg">#EAEAEA</color>
+     <color name="textcolor_light">#737373</color>
+	<color name="otp_count">#EAEAEA</color>
+	<color name="green">#97CB48</color>
+	<color name="grey_text">#737373</color>
+	<color name="view_dark_grey">#BABABA</color>
+	<color name="text_dark">#3E3E3E</color>
+	<color name="dark_grey_for_text">#858585</color>
+     <color name="text_shadow">#7F000000</color>
+    <!--Custom Action Bar  -->
+
+    <color name="light_green">#99CA43</color>
+    <color name="bg_light_blue">#EBF5FF</color>
+    
+    <!--Track Your Fix  -->
+    
+    <color name="greenish_yellow">#D7BF28</color>
+    <color name="light_greys">#CDCDCD</color>
+    <color name="whitish_grey">#A5A5A5</color>
+     <color name="Red"> #E31E25</color>
+
+    <!-- Right Menu -->
+
+    <color name="right_menu_top_background_colour">#EDE8DA</color>
+    <color name="notification_heading_background">#ACACAC</color>
+    <color name="dark_green">  #4DA682</color>
+    <color name="text_color">    #3E3E3E</color>
+  	
+    <!-- Payment -->
+	<color name="dark_green_contact_us">#49A582</color>
+	
+	<color name="make_payment_to_merchant_top_bar_colour">#37A684</color>
+	
+	<!-- chat - details - users tab -->
+	<color name="chat_details_users_bg">#EBEBEB</color>
+	<color name="pending_yellow">#D7BF28</color>
+</resources>

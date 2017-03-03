@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+    	<include layout="@layout/custom_action_bar"/>
+        
+    </LinearLayout>
+	<LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:weightSum="12">
+    	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="3.75"
+	        android:gravity="center"
+	        android:paddingTop="8dp" >
+	        
+	        <ImageView
+                android:id="@+id/image_logosmall"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:src="@drawable/icon" />
+	    </LinearLayout>
+
+       		<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:paddingBottom="5dp"
+    		android:orientation="vertical"
+    		android:gravity="center"
+    		android:layout_weight="1.90">
+	        
+       		<TextView
+       		    android:id="@+id/textViewTop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/need_number"
+                android:textColor="@color/black"
+                android:textSize="18sp" /> 
+            <TextView
+                android:id="@+id/textVievMiddle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/to_give_you"
+                android:textColor="@color/black"
+                android:textSize="18sp" />          
+       		<TextView
+       		     android:id="@+id/textViewBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/customer_service"
+                android:textColor="@color/black"
+                android:textSize="18sp" />      
+		   </LinearLayout> 
+		  
+       		<LinearLayout
+       		    android:layout_width="match_parent"
+       		    android:layout_height="10dp"
+       		    android:layout_weight="1.25"
+       		    android:weightSum="3"
+       		    android:gravity="center"
+       		    android:orientation="horizontal"
+       		    android:paddingBottom="12dp"
+       		    android:paddingTop="5dp" >
+       		<LinearLayout 
+       		    android:layout_width="0dp"
+       		     android:gravity="center"
+       		    android:layout_height="match_parent"
+       		    android:layout_weight=".75">
+       		    
+       		    <Spinner
+       		        android:id="@+id/spinnerCountryCode"
+       		        android:layout_width="match_parent"
+       		        android:layout_height="match_parent"
+       		        android:textAlignment="center"
+       		        android:background="@drawable/dropdown_edit_detail" 
+       		        android:spinnerMode="dropdown"/>
+
+       		</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    android:layout_marginLeft="10dp"
+			    android:gravity="center"
+			    android:layout_weight="2.25" >
+
+			    <EditText
+			        android:id="@+id/editTextPhoneno"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:background="@drawable/editext_grey_stroke"
+			        android:gravity="left|center"
+			        android:hint="@string/phone_hint"
+			        android:inputType="phone"
+			        android:textColor="@color/black"
+			        android:imeOptions="actionDone"
+			        android:textColorHint="#919191"
+			        />
+			</LinearLayout>
+
+       		</LinearLayout>
+       		
+       		<LinearLayout 
+       		android:id="@+id/enterOTPLayout"    
+        	android:layout_width="match_parent"
+    		android:layout_height="10dp"
+    		android:paddingLeft="20dp"
+    		android:paddingRight="20dp"
+    		android:background="@color/otp_count"
+    		android:orientation="vertical"
+    		android:gravity="center"
+    		android:visibility="invisible"
+    		android:layout_weight="3">
+			
+       		<TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="@string/enter_OTP"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+       		<TextView
+       		    android:id="@+id/textViewCounter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:gravity="center"
+                android:text="2.00"
+                android:textColor="@color/app_green_color"
+                android:textSize="25sp" />
+
+       		<EditText
+       		    android:id="@+id/ediTextOTP"
+       		    android:layout_width="120dp"
+       		    android:layout_height="50dp"
+       		    android:gravity="center"
+       		    android:inputType="number"
+       		    android:imeOptions="actionDone"
+       		    android:background="@drawable/editext_grey_stroke"
+       		    android:hint="@string/hint_otp"
+       		    android:textColorHint="#3E3E3E" />
+
+       		</LinearLayout>
+       		
+       		<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:paddingTop="15dp"
+    		android:orientation="vertical"
+    		android:gravity="center"
+    		android:layout_weight="1.5">
+       		
+       	
+       		         
+                      <Button
+       		        android:id="@+id/button_submit_OTP"
+       		        android:layout_width="match_parent"
+       		        android:layout_height="match_parent"
+       		        android:background="@drawable/green_button_rounded_corners"
+       		        android:text="@string/send_otp"
+       		        android:visibility="visible"
+       		        android:textSize="18sp"
+       		        android:textColor="@color/white" />
+                       <Button
+       		        android:id="@+id/button_submit"
+       		        android:layout_width="match_parent"
+       		        android:layout_height="match_parent"
+       		        android:background="@drawable/green_button_rounded_corners"
+       		        android:text="Submit"
+       		                android:textSize="18sp"
+       		        android:visibility="gone"
+       		        android:textColor="@color/white" />
+
+       		   
+       			</LinearLayout> 
+       		<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:paddingLeft="8dp"
+    		android:paddingRight="20dp"
+    		android:orientation="vertical"
+    		android:gravity="center"
+    		android:layout_weight=".5">   
+       		    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/dont_worry"
+                android:textColor="@color/grey_text"
+                android:textSize="10sp" />
+       		</LinearLayout>    
+       	
+       		
+    </LinearLayout>
+    
+</LinearLayout>

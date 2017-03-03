@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp" 
+    android:layout_margin="3dp"
+    android:background="@color/white">
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:weightSum="10">
+ 
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            >
+            <ImageView 
+            android:id="@+id/imageview_user_adapter_image"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:src="@drawable/avtar_big"
+                />
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:orientation="vertical"
+            >
+            <TextView 
+             android:id="@+id/textview_user_adapter_name"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:text="Bevan Chva"
+            android:gravity="left|center"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+                />
+              <TextView 
+            android:id="@+id/textview_user_adapter_customer"  
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:text="Customer"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/green"
+                />
+        </LinearLayout>
+       
+          <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            >
+          <Button
+              android:id="@+id/button_user_adapter_viewprofile"
+              android:layout_width="fill_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="30dp"
+              android:layout_marginLeft="20dp"
+              android:text="View Profile"
+              android:textColor="@color/white"
+              android:textSize="18dp"
+              android:background="@drawable/dark_green_with_round_corners"
+              android:layout_marginRight="10dp"
+              >
+          </Button>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

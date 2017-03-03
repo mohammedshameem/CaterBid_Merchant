@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_toptab_pending"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/image_ongoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/ongoing_s" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/image_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/completedcancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ongoing_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+         <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipetorefreh_ongoing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" > 
+
+            <ListView
+                android:id="@+id/ongoing_list"
+                android:layout_width="fill_parent"
+                android:layout_height="480dp"
+                android:divider="@null" >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout> 
+
+        <RelativeLayout
+            android:id="@+id/ongoing_loading_more"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ongoing_list"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-100dp"
+            android:background="#77ffffff"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_completed_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:text="Filter status"
+                android:textColor="@color/grey_text"
+                android:textSize="@dimen/payment_text" />
+ <Spinner
+                android:id="@+id/filterStatus_spinner"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/dropdown_image"
+                android:gravity="left|center"
+                android:paddingLeft="@dimen/margin_nxormal"
+                android:paddingRight="50dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/completed_list"
+                android:layout_width="fill_parent"
+                android:layout_height="350dp"
+                android:divider="@null" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/completed_loading_more"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/completed_list"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-100dp"
+                android:background="#77ffffff"
+                android:gravity="center|bottom"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+        <include layout="@layout/custom_action_bar"/>
+	</LinearLayout> -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginLeft="@dimen/margin_small"
+    	android:layout_marginRight="@dimen/margin_small"
+    	android:weightSum="11.5"
+    	android:orientation="vertical">
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:layout_weight=".75"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        
+	        <TextView 
+	        	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:textColor="@color/black"
+    			android:textSize="@dimen/texts_size"
+    			android:text="@string/account_balance"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        
+	        <TextView 
+	            android:id="@+id/textViewAccountBalances"
+	        	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity="center"
+    			android:gravity="center"
+    			android:textSize="@dimen/textSize_header_medium"
+    			android:textColor="@color/green"
+    			android:textStyle="bold"
+    			android:text="$"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:layout_weight="1.75"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        
+	        <TextView 
+	        	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity="center"
+    			android:gravity="center"
+    			android:textColor="@color/dark_grey_for_text"
+    			android:textSize="@dimen/payment_text"
+    			android:text="@string/payments_collected"/>
+	        <TextView 
+	        	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity="center"
+    			android:gravity="center"
+    			android:textColor="@color/dark_grey_for_text"
+    			android:textSize="@dimen/payment_text"
+    			android:text="@string/and_credit"/>
+	        <TextView 
+	        	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity="center"
+    			android:textColor="@color/dark_grey_for_text"
+    			android:gravity="center"
+    			android:textSize="@dimen/payment_text"
+    			android:text="@string/your_easyhome"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:layout_marginTop="@dimen/margin_xsmall"
+    		android:orientation="vertical">
+	        
+	        <Button 
+	            android:id="@+id/buttonTransferToBank"
+	            android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:text="@string/transfer_to_bank"
+    			android:textSize="@dimen/texts_size"
+    			android:background="@drawable/green_button_rounded_corners"
+       		    android:textColor="@color/white" />
+	    </LinearLayout>	
+	    <LinearLayout 
+	        android:id="@+id/layoutContact"
+	        android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:layout_weight=".60"
+    		android:gravity="center"
+    		android:layout_marginTop="@dimen/margin_xsmall"
+    		android:layout_marginBottom="@dimen/margin_xsmall"
+    		android:orientation="horizontal">
+	        
+	        <ImageView 
+	            android:id="@+id/imageContactUs"
+	            android:layout_width="20dp"
+    			android:layout_height="20dp"
+    			android:src="@drawable/contact_us"/>
+	        <TextView 
+	            android:id="@+id/textViewContactUs"
+	        	android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity="center"
+    			android:textColor="@color/dark_green_contact_us"
+    			android:gravity="center"
+    			android:textStyle="bold"
+    			android:layout_marginLeft="@dimen/margin_xsmaller"
+    			android:textSize="@dimen/payment_text"
+    			android:text="@string/contact_us"/>
+	        
+	    </LinearLayout>	
+	    <View 
+	        android:layout_width="match_parent"
+    		android:layout_height="1dp"
+    		android:background="@color/whitish_grey"/>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:layout_weight="5.40"
+    		android:gravity="center"
+    		android:layout_marginTop="@dimen/margin_xsmall"
+    		android:orientation="vertical">
+	        
+	        <TextView 
+	        	android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:textColor="@color/dark_grey_for_text"
+    			android:textSize="16sp"
+    			android:paddingLeft="@dimen/margin_xsmall"
+    			android:textStyle="bold"
+    			android:layout_marginBottom="@dimen/margin_xsmaller"
+    			android:text="@string/recent_transaction"/>
+	        <LinearLayout 
+	        	android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:background="@drawable/layout_grey_round_edge"
+    			android:orientation="vertical">
+	        	        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+	    			android:layout_height="wrap_content"
+	    			android:weightSum="4"
+	    			android:baselineAligned="false"
+	    			android:gravity="center"
+	    			android:orientation="horizontal">
+		            
+		            <LinearLayout 
+		            	android:layout_width="0dp"
+	    				android:layout_height="wrap_content"
+	    				android:layout_marginTop="@dimen/margin_xsmaller"
+	    				android:layout_weight="1"
+	    				android:orientation="vertical">
+			            <TextView 
+			                android:layout_width="match_parent"
+		    				android:layout_height="wrap_content"
+		    				android:textColor="@color/green"
+		    				android:textStyle="bold"
+		    				android:gravity="center"
+		    				android:text="@string/date"/>
+		            
+		        	</LinearLayout>
+		        	<LinearLayout 
+		            	android:layout_width="0dp"
+	    				android:layout_height="wrap_content"
+	    				android:layout_weight="1"
+	    				android:orientation="vertical">
+			            <TextView 
+			                android:layout_width="match_parent"
+		    				android:layout_height="wrap_content"
+		    				android:textColor="@color/green"
+		    				android:textStyle="bold"
+		    				android:gravity="center"
+		    				android:text="@string/fix_number"/>
+		            
+		        	</LinearLayout>
+		        	<LinearLayout 
+		            	android:layout_width="0dp"
+	    				android:layout_height="wrap_content"
+	    				android:layout_weight="1"
+	    				android:orientation="vertical">
+			            <TextView 
+			                android:layout_width="match_parent"
+		    				android:layout_height="wrap_content"
+		    				android:textColor="@color/green"
+		    				android:textStyle="bold"
+		    				android:gravity="center"
+		    				android:text="@string/amount"/>
+		            
+		        	</LinearLayout>
+		        	<LinearLayout 
+		            	android:layout_width="0dp"
+	    				android:layout_height="wrap_content"
+	    				android:layout_weight="1"
+	    				android:orientation="vertical">
+			            <TextView 
+			                android:layout_width="match_parent"
+		    				android:layout_height="wrap_content"
+		    				android:textColor="@color/green"
+		    				android:textStyle="bold"
+		    				android:gravity="center"
+		    				android:text="@string/status"/>
+		            
+		        	</LinearLayout>
+		            
+		        </LinearLayout>
+	        	<ListView 
+	        	    android:id="@+id/listTransationHistory"
+	        	    android:layout_width="match_parent"
+		    		android:layout_height="214dp"
+		    		android:divider="@null">
+	        	</ListView>
+	        
+	    </LinearLayout>	
+	        
+	    </LinearLayout>	
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:layout_marginTop="@dimen/margin_xsmall"
+    		android:layout_marginBottom="@dimen/margin_xsmaller"
+    		android:orientation="vertical">
+	        
+	        <Button 
+	            android:id="@+id/buttonSeeAll"
+	            android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:text="@string/see_all"
+    			android:textSize="@dimen/texts_size"
+    			android:background="@drawable/green_button_rounded_corners"
+       		    android:textColor="@color/white" />
+	    </LinearLayout>	
+	</LinearLayout>
+</LinearLayout>

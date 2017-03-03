@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+    <include layout="@layout/custom_action_bar"/>   
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.8" 
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/customer_create_account_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:weightSum="1" 
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:id="@+id/textview_one_step_closer"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/create_an_account_text"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+ />
+
+            <TextView
+                android:id="@+id/home_fixed"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center|top"
+                android:text="@string/tract_your_payment_text"
+                android:textSize="20sp" 
+                 android:textColor="@color/black"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+           android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:layout_weight="1.2" >
+
+            <EditText
+                android:id="@+id/edittext_collect_emailaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:editable="false"
+                android:background="@drawable/editext_grey_stroke"
+                android:hint="@string/hint_Email_Address"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="9dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/edittext_collect_enterpassword"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/editext_grey_stroke"
+                android:hint="@string/hint_enter_password"
+                android:fontFamily="sans-serif"
+                android:inputType="textPassword"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        
+      
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.2" >
+
+            <EditText
+                android:id="@+id/edittext_collect_confirmpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                android:background="@drawable/editext_grey_stroke"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2.3" >
+
+            <Button
+                android:id="@+id/collect_submit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="@string/Submit"
+                 android:background="@drawable/green_button_rounded_corners"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+      
+    </LinearLayout>
+
+</LinearLayout>

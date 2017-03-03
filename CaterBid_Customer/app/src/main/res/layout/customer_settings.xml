@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    android:orientation="vertical">
+
+        <include layout="@layout/custom_action_bar" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+<LinearLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="0dp"
+     android:layout_weight="6.1"
+     android:background="@drawable/small_background"
+     android:orientation="vertical"
+     android:weightSum="6"
+    >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="4.1"
+            android:orientation="vertical"
+            android:weightSum="5" >
+
+          <!-- <ImageView
+                android:id="@+id/imageview_settings_user"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:src="@drawable/avtar_big"
+                android:layout_marginBottom="3dp" />  --> 
+                
+          <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_marginTop="3dp"
+	    android:gravity="center"
+	    android:layout_weight="3">
+        <com.pkmmte.circularimageview.CircularImageView
+            android:id="@+id/imageview_settings_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/avtar_big"
+            app:selector="true"
+            app:selector_color="#44FFBB33"
+            app:selector_stroke_color="#88FF8800"
+            app:selector_stroke_width="20dp" />
+	</LinearLayout>	 
+
+            <TextView
+                android:id="@+id/textview_settings_username"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Bao Huynh"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textview_settings_mobileno"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.65"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:text="+65478904"
+                android:textColor="@color/grey_text"
+               />
+
+            <TextView
+                android:id="@+id/textview_settings_emailaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="13dp"
+                android:textSize="17sp"
+                android:layout_weight="0.65"
+               
+                android:gravity="center"
+                android:text="humjuo89@gmail.com"
+                android:textColor="@color/grey_text" 
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_settings_editdetails"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/select_fix_bg"
+            android:orientation="horizontal"
+            android:weightSum="1">
+                   <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/edit_details"
+                   android:layout_marginRight="10dp"
+                       />
+
+                   <TextView
+                     
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:textColor="@color/black"
+                       android:text="Edit Details"
+                       android:textSize="18sp" />
+
+               </LinearLayout>   
+
+        <LinearLayout
+            android:id="@+id/linearlayout_settings_changepassword"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_fix_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/change_pwd" 
+                  android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                  android:id="@+id/text_edit"
+                  android:textColor="@color/black"
+                android:text="@string/changepassword"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        
+        </LinearLayout>
+        
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/landing_page_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+           <LinearLayout
+                android:id="@+id/linear_layout_settings_mobilenotifications"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_settings_mobilenotifications"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:textColor="@color/black"
+                    android:gravity="left|center"
+                    android:text="@string/mobilenotifications"
+                    android:textSize="18sp" />
+
+           
+                     <ToggleButton
+                    android:id="@+id/mobilenotifications_toggle_button"
+                   android:layout_width="0dp"
+                    android:gravity="right"
+                       android:layout_weight="0.15"
+                       android:layout_marginTop="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/toogle_selector"
+                    android:layout_marginRight="15dp"
+                    android:checked="true"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/view_dark_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_settings_emailnotification"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_settings_emailnotification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.85"
+                    android:gravity="left|center"
+                      android:textColor="@color/black"
+                    android:text="@string/emailnotification"
+                    android:textSize="18sp" />
+
+                    <ToggleButton
+                    android:id="@+id/emailnotification_toggle_button"
+                   android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/toogle_selector"
+                    android:checked="true"
+                    android:layout_weight="0.17"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="15dp"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                     />
+                    
+            </LinearLayout>
+            
+             <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@color/view_dark_grey" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5.7"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button_settings_logout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/dark_green"
+                    android:gravity="center"
+                    android:text="@string/logout"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

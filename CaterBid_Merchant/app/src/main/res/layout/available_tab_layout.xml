@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_toptab_pending"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/image_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/new_job_s" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/image_quoted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/quoted_unselected" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pending_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipetorefresh_newjob"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/pending_list"
+                android:layout_width="fill_parent"
+                android:layout_height="480dp"
+                android:divider="@null" >
+            </ListView>
+              </android.support.v4.widget.SwipeRefreshLayout>
+
+            <RelativeLayout
+                android:id="@+id/newjob_loading_more"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/pending_list"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-100dp"
+                android:background="#77ffffff"
+                android:gravity="center|bottom"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:id="@+id/progress_loading"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+            </RelativeLayout>
+      
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_quoted_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipetorefresh_quoted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/quoted_list"
+                android:layout_width="fill_parent"
+                android:layout_height="480dp"
+                android:layout_marginBottom="150dp"
+                android:divider="@null" >
+            </ListView>
+             </android.support.v4.widget.SwipeRefreshLayout>
+
+            <RelativeLayout
+                android:id="@+id/quotedjob_loading_more"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/quoted_list"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-200dp"
+                android:background="#77ffffff"
+                android:gravity="center|bottom"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+            </RelativeLayout>
+       
+    </LinearLayout>
+
+</LinearLayout>

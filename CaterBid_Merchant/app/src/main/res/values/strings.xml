@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EHF - Fixer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="select_fix_category">Select Fix Category</string>
+    <string name="select_fix_category_ac">Air-Con.</string>
+    <string name="select_fix_category_plumbing">Plumbing</string>
+    <string name="select_fix_category_electrician">Electrician</string>
+    <string name="select_fix_category_painting">Painting</string>
+    <string name="select_fix_category_carpenter">Carpenter</string>
+    <string name="select_fix_category_locksmith">Locksmith</string>
+    <string name="select_fix_category_pest_ctrl">Pest Control</string>
+    <string name="select_fix_category_sanitization">Sanitization</string>
+    <string name="reviews">Reviews</string>
+    <string name="fixes_completed">Fixes Completed</string>
+
+    <!-- Custom Action Bar -->
+    
+    <string name="hash_fix">Fix#123456</string>
+    <string name="track_your_fix">Track Your Fix</string>
+    <string name="address">Address</string>
+    <string name="postalcode">Postal Code </string>
+    <string name="postalcode_hint">Enter your 6 digit Postal Code</string>
+    <string name="floorno"> Floor No:</string>
+    <string name="unitno"> Unit No:</string>
+    <string name="ifnecessary">If necessary</string>
+    <string name="moredetail">The more detail you provide,The more accurate your Fixer will be ! </string>
+
+    <!-- Track Your Fix -->
+    <string name="One_step_closer_to_getting_your">One step closer to getting jobs on </string>
+    <string name="Home_Fixed">Easy Home Fix!</string>
+    <string name="Verify_Phone_Number">Next: Verify Phone Number</string>
+    <string name="hint_Email_Address">Email Address</string>
+     <string name="hint_Company_name">Company Name</string>
+    <string name="hint_First_name">First name</string>
+    <string name="hint_Last_name">Last name</string>
+    <string name="hint_enter_password">Enter Password</string>
+     <string name="hint_companyname">Company name (Optional)</string>
+    <string name="Updatepassword">Update Password</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="repeatpassword">Repeat Password</string>
+    <string name="Updatedetails">Update Details</string>
+    <string name="Uploadimages">Upload image</string>
+    <string name="mobilenumber">Mobile Number</string>
+
+    <string name="submit">Submit</string>
+    <string name="tellmoreaboutfix">Tell us more about your Fix</string>
+    <string name="areyoulooking">Are you looking for</string>
+    <string name="insertimage">Insert Image</string>
+    <string name="pic_speaks">Picture speaks a thousand words!</string>
+    <string name="upload_one">Upload one to make your description clearer</string>
+
+    <!-- Track Your Fix -->
+    <string name="editedetails">Edit Details</string>
+    <string name="changepassword">Change Password</string>
+    <string name="mobilenotifications">Mobile Notifications</string>
+    <string name="emailnotification">Email Notifications</string>
+    <string name="logout">Log Out</string>
+    <string name="paid">Paid: </string>
+    <string name="cancelled">Cancelled</string>
+    <string name="cancel">Cancel</string>
+    <string name="booking"> Booking: </string>
+    <string name="pending_payment">Pending payment:</string>
+    <string name="rating">Rating </string>
+    <string name="You_have_no">You have no</string>
+    <string name="Completed">Completed or</string>
+    <string name="Cancelled">Cancelled Fixes</string>
+    <string name="Ongoing">Ongoing Fixes</string>
+    <string name="Pending">Pending Fixes</string>
+    <string name="takephoto">Take Photo or Video</string>
+     <string name="photolibrary">Photo Library</string>
+     
+     
+     
+   <!--    Fix details Pop Up -->
+    <string name="hint_Edit_quote">Edit Quote</string>
+    <string name="hint_enter_quote_qmount">Enter quote amount:</string>
+    <string name="textview_cancel">Cancel</string>
+     <string name="textview_ok">Ok</string>
+     
+     
+     
+   
+   
+   
+   
+    <!-- Entert OTP -->
+    <string name="verify">We need to verify your phone</string>
+    <string name="in_case">number in case Customer Service</string>
+    <string name="needs_to">needs to call you.</string>
+    <string name="enter_OTP">Please enter OTP</string>
+    <string name="hint_otp">i.e.1234</string>
+    <string name="dont_worry">Don\'t worry, we will never share your personal data.</string>
+    <string name="next">Next</string>
+    <string name="need_number">We need your phone number</string>
+    <string name="to_give_you">to give you Personalized</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="phone_hint">Mobile Number</string>
+    <string name="findfixers">Find Fixers!</string>
+    <string name="close">Close</string>
+
+    <!-- Sign up and Login Page -->
+    <string name="signup">SIGN UP</string>
+    <string name="login">LOG IN</string>
+    <string name="login_btn_text">Log in</string>
+    <string name="next_text">Next</string>
+    <string name="signup_text">Sign up to get Fixing!</string>
+    <string name="login_text">Login to get Fixing!</string>
+
+    <string name="earth">+1</string>
+    <string name="moon">+65</string>
+    <string name="editdetails">Edit Details</string>
+
+    
+    <string name="rate_your">Rate your experience</string>
+    <string name="review">Review</string> 
+    <string name="fixer_not_right">Tell us why \n this Fixer not right?</string>
+    <string name="too_expensive">Too \n Expensive</string>
+    <string name="wrong_category">Wrong \n Category</string>
+    <string name="not_trustworthy">Not \n Trustworthy</string>
+    <string name="not_competent">Not \n Competent</string>
+    <string name="hint_fixer_not_right">Others&#8230; (Optional)</string>
+
+
+    <string-array name="dummy">
+        <item>@string/earth</item>
+        <item>@string/moon</item>
+    </string-array>
+    <!-- Edit Fix Details -->
+    <string name="address_text">Address</string>
+    <string name="edit_text">Edit</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="postal_code_hint">Enter your 6 digit Postal Code</string>
+    <string name="floor_num_text">Floor No:</string>
+    <string name="floor_num_text_hint">i.e. 02</string>
+    <string name="unit_num_text_hint">i.e. 44</string>
+    <string name="unit_num_text">Unit No:</string>
+    <string name="are_u_looking_for">Are you looking for</string>
+    <string name="details_hint">The more detail you provide, The more accurate your Fixer will be!</string>
+    <string name="just_a_min_text">Just a moment!</string>
+    <string name="did_u_test_fixer_text">Did you test with your Fixer before making these changes</string>
+    <string name="did_u_test_fixer_yes_text">Yes, make these changes!</string>
+    <string name="did_u_test_fixer_no_text">No, let me do that now.</string>
+    <string name="description_hint">Descriptions</string>
+    <string name="price_hint">Price</string>
+    <string name="miscellaneous">Miscellaneous Charges</string>
+    
+    
+   <!--  first login page -->
+       <string name="congratulations_text">Congratulations!</string>
+        <string name="select_category_text">Select which category(s) you belongs to</string>
+        <string name="submit_text">Submit</string>
+    
+<!--     collect floor and unit number -->
+    <string name="if_you_are_living_text">if you are living in an apartment,</string>
+    <string name="please_give_us_your_floor_text">please give us your floor</string>
+     <string name="and_unit_no_text">and unit no.</string>
+     <string name="Floor_No_text">Floor No:</string>
+     <string name="Unit_No_text">Unit No:</string>
+    
+   <!--  Edit Details Dialog -->
+    <string name="just_a_moment_text">Just a moment!</string>
+    <string name="did_you_test_with_your_fixer_text">Did you test with your fixer text</string>
+    <string name="before_making_these_changes_text">before making these changes</string>
+     <string name="yes_make_these_changes_text"> Yes,make these changes!</string>
+      <string name="no_let_me_do_that_now_text">No, let me do that now.</string>
+    <!--Fix  -->
+    
+    <string name="fix_add_contact">Add others to keep them informed about the Fix!(Swipe to hide)</string>
+		<string name="cash">Cash</string>
+           <string name="creditcard_or_paypal">Credit Card / Paypal</string>
+        <string name="how_do_wish_to_make">How do you wish to make </string>
+         <string name="payment_to_your_fixer">Payment to your Fixer.</string>
+          <string name="share_the_knowledge">Share the Knowledge !</string>
+               <string name="review_your_fixer">Review your	Fixer!</string>
+         
+   <!-- Merchant Payments -->             
+      <string name="account_balance">Current Account Balance</string>         
+      <string name="payments_collected">*Payments collected thought PayPal</string>  
+      <string name="and_credit">and Credit Card will be credited into</string>  
+      <string name="your_easyhome">your EasyHomeFix account.</string>
+      <string name="transfer_to_bank">Transfer to bank account</string> 
+      <string name="contact_us">Contact us</string>
+      <string name="recent_transaction">Recent Transaction History</string> 
+      <string name="see_all">See All</string> 
+      <string name="date">Date</string>  
+      <string name="fix_number">Fix number</string>  
+      <string name="amount">Amount</string>  
+      <string name="status">Status</string>  
+      <string name="payments">Payments</string> 
+      <string name="transaction_history">Transaction History</string> 
+      <string name="we_do_not">We do not have</string>
+      <string name="your_bank_details">your bank details</string>
+      <string name="please_call_us">Please call us at +65 12345678</string>  
+      <string name="to_give_us_your">to give us your</string>
+      <string name="bank_account">bank account details.</string> 
+      <string name="ok">OK</string> 
+      <string name="transfers_are_done">Transfers are done every 2 weeks.</string>
+      <string name="your_transfer">Your transfer wll be done at the</string> 
+      <string name="next_scheduled">next scheduled transfer.</string> 
+      
+      <string name="congrats_your_fix_completed">Congratulations! Your fix has been complete.</string>
+            <string name="make_payment_to_merchant">Make payment to "Merchant Name"</string>
+
+    <string-array name="spinnervalue">
+        <item>@string/earth</item>
+        <item>@string/moon</item>
+    </string-array>
+         
+    <string name="available_fixes">Available Fixes</string>
+    <string name="your_fixes">Your Fixes</string>
+    
+    <string name="users">Users</string>
+    <string name="interested_in_job">Interested in this job? Quote your price!</string>
+    
+    <string name="cash_payment">Cash Payment</string>
+    <string name="Please_collect">Please collect $XXX in cash</string>
+    <string name="press_ok">Press OK when done</string>
+       <string name="facebook_app_id">854611257962043</string>
+</resources>
+
+

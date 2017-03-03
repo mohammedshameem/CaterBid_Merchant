@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/fix_chat_content"
+            android:layout_marginRight="50dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatbox"
+            android:gravity="left"
+            android:paddingTop="35dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible"
+            android:layout_marginTop="18dp"
+            >
+        </TextView>
+           <ImageView
+            android:id="@+id/fix_chat_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+             android:layout_marginRight="50dp"
+           android:gravity="left"
+           android:paddingRight="30dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+                android:layout_marginTop="18dp"
+            android:background="@drawable/chatbox"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/fix_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvBody"
+            android:layout_alignTop="@+id/tvBody"
+            android:layout_marginLeft="10dp"
+              android:textColor="@color/black"
+            android:text="name"
+              android:paddingTop="8dp"
+              android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/fix_chat_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textColor="@color/black"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:text="11 june"
+            android:paddingTop="8dp"
+              android:layout_marginTop="15dp" />
+    </RelativeLayout>
+
+             <com.pkmmte.circularimageview.CircularImageView
+        android:id="@+id/fix_chat_user_image"
+        android:layout_width="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="50dp"
+       
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/profile_image_null" />
+
+</RelativeLayout>

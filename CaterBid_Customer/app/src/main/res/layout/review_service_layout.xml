@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <include layout="@layout/custom_action_bar"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_gravity="center_vertical"
+    	android:gravity="center"
+    	android:paddingLeft="@dimen/margin_normal"
+    	android:paddingRight="@dimen/margin_normal"
+    	android:orientation="vertical"
+    	android:weightSum="12">
+         
+        <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:gravity="center"
+    	android:layout_marginLeft="@dimen/margin_normal"
+    	android:layout_marginBottom="@dimen/margin_small"
+    	android:layout_weight="3.5"
+    	android:orientation="vertical">
+         
+        <ImageView 
+            android:id="@+id/imageRatingServiceAvatar"
+            android:layout_width="150dp"
+    		android:layout_height="150dp"
+    		android:src="@drawable/review_icon_big"/>
+        
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="0dp"
+	    	android:gravity="center"
+	    	android:paddingBottom="@dimen/margin_xsmaller"
+	    	android:layout_weight="1.5"
+	    	android:orientation="vertical">
+	    	
+         		<TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="20sp"
+		            android:text="@string/rate_your"
+		            android:textColor="#3E3E3E"/>
+         		<TextView
+         		    android:id="@+id/textViewRateName" 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="20sp"
+		            android:text="with Baohuynh"
+		            android:visibility="gone"
+		            android:textColor="#3E3E3E"/>
+        </LinearLayout>
+        
+     	<LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="0dp"
+	    	android:gravity="center"
+	    	android:layout_weight="1"
+	    	android:layout_marginTop="@dimen/margin_xsmall"
+	    	android:orientation="vertical">
+		
+			<RatingBar
+			    android:id="@+id/ratingReviewService"
+			    android:layout_height="wrap_content"
+			    style="@style/StarRatingBarBig"
+			    android:layout_width="wrap_content"
+			    android:gravity="center"
+			    android:numStars="5"
+			    android:stepSize="1.0" />
+    	    
+    	</LinearLayout>
+     	
+     	<LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="0dp"
+	    	android:gravity="center"
+	    	android:layout_weight="4"
+	    	android:paddingBottom="10dp"
+	    	android:paddingTop="@dimen/margin_xsmall"
+	    	android:orientation="vertical">
+		
+			<EditText 
+			    android:id="@+id/editTextReviewService"
+			    android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+    			android:minLines="6" 
+    			android:gravity="top|left" 
+    			android:textColor="@color/black"
+    			android:maxLines="10"
+    			android:paddingTop="3dp"
+    			android:singleLine="true"
+    			android:imeOptions="actionDone"
+	    		android:background="@drawable/editext_grey_stroke"/>
+    	    
+    	</LinearLayout>
+    	
+     	<LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="0dp"
+	    	android:gravity="center"
+	    	android:layout_weight="1.2"
+	    	android:orientation="vertical">
+		
+			<Button 
+			    android:id="@+id/buttonReviewServiceSubmit"
+			    android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:background="@drawable/green_button_rounded_corners"
+       		    android:text="@string/submit"
+       		    android:textStyle="bold"
+       		    android:textSize="20sp"
+       		    android:textColor="@color/white"/>
+    	    
+    	</LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.easyhomefix.customer"
+        minSdkVersion 16
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile 'com.google.android.gms:play-services-auth:8.3.0'
+    compile files('libs/PayPalAndroidSDK-2.9.10.jar')
+    compile files('libs/android-viewbadger.jar')
+    compile files('libs/easyandroidanimationslibrary-v0.5.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/universal-image-loader-1.9.0.jar')
+    compile project(path: ':circularImageView')
+    compile project(path: ':fancycoverflow')
+    compile project(path: ':library_slide_menu')
+    compile project(path: ':updatedAsyncLIb')
+    compile project(path: ':facebook')
+}

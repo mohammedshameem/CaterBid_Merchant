@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:background="@color/black"
+>
+
+     <RelativeLayout
+     android:id="@+id/relative_top"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+       
+        android:layout_height="wrap_content">
+           <RelativeLayout
+        android:layout_width="fill_parent"
+
+        android:background="@color/light_green"
+        android:layout_height="50dp">
+        
+       
+        <ImageView
+            android:id="@+id/okbutton"
+           android:layout_width="@dimen/image_icon_size"
+                android:layout_height="@dimen/image_icon_size"
+             android:src="@drawable/back"
+             android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+             android:textColor="@color/white"
+          />
+        <TextView
+            android:id="@+id/head"
+              android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EasyHomeFix"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+           android:layout_centerHorizontal="true"
+          />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+     android:layout_below="@+id/relative_top"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+        
+          <com.xminds.easyfix_merchant.Imagezooming.TouchImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"/>
+    </RelativeLayout>
+  
+   
+    
+</RelativeLayout>

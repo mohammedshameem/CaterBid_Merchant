@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/transparency_full"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/popup_rounded_corner"
+	    android:paddingLeft="@dimen/margin_small"
+	    android:paddingRight="@dimen/margin_small"
+	    android:layout_marginLeft="@dimen/margin_small"
+	    android:layout_marginRight="@dimen/margin_small"
+	    android:orientation="vertical">
+    
+	<RelativeLayout 
+	 	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+    	<!-- <RelativeLayout android:layout_width="wrap_content"
+    	    android:id="@+id/relative_notused"
+    	    android:layout_height="wrap_content">
+    	    <TextView android:layout_width="wrap_content"
+    	        android:layout_height="20dp"
+    	        android:visibility="invisible"
+    	        android:text="sdas"/>
+    	</RelativeLayout>
+ -->
+
+		<TextView
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:text="@string/fixer_not_right"
+	        android:textColor="@color/green"
+	        android:layout_marginTop="@dimen/margin_popup"
+	        android:textSize="@dimen/textSize_header_normal"
+	        android:textStyle="bold" />
+
+	 	<ImageView
+	 	    android:id="@+id/image_popup_close"
+	    	android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentEnd="true"
+	        android:layout_alignParentTop="true"
+	        android:paddingTop="@dimen/margin_normal"
+	        android:src="@drawable/close_ash_button" />
+	        
+		</RelativeLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="@dimen/margin_nxormal"
+    	android:weightSum="4">
+	 	
+	    <LinearLayout 
+	        android:layout_width="0dp"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:gravity="left"
+    		android:layout_weight="1">
+	        
+	        <ImageView
+	            android:id="@+id/imageExpensive"
+	    		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/feedback_png" />
+	        
+	        <TextView
+	    		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center"
+	        	android:layout_marginTop="5dp"
+	        	android:text="@string/too_expensive"
+	        	android:textSize="@dimen/review_list_text_date"
+	        	android:textColor="@color/text_dark" />
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="0dp"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_weight="1">
+	        
+	        <ImageView
+	             android:id="@+id/imageWrong"
+	    		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/feedback2" />
+	        
+	        <TextView
+	    		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center"
+	        	android:layout_marginTop="5dp"
+	        	android:text="@string/wrong_category"
+	        	android:textSize="@dimen/review_list_text_date"
+	        	android:layout_marginLeft="8dp"
+	        	android:textColor="@color/text_dark" />
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="0dp"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_weight="1">
+	        
+	        <ImageView
+	             android:id="@+id/imageTrustworthy"
+	    		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/feedback3" />
+	        
+	        <TextView
+	    		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center"
+	        	android:textSize="@dimen/review_list_text_date"
+	        	android:layout_marginTop="5dp"
+	        	android:text="@string/not_trustworthy"
+	        	android:textColor="@color/text_dark" />
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="0dp"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:gravity="center"
+    		android:layout_weight="1">
+	        <ImageView
+	            android:id="@+id/imageCompetent"
+	    		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/feedback4" />
+	        
+	        <TextView
+	    		android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center"
+	        	android:layout_marginTop="5dp"
+	        	android:text="@string/not_competent"
+	        	android:textSize="@dimen/review_list_text_date"
+	        	android:textColor="@color/text_dark" />
+	        
+	    </LinearLayout>
+	    
+	</LinearLayout>		
+		<EditText 
+			    android:id="@+id/editTextOtherReasons"
+			    android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:layout_marginTop="@dimen/margin_normal"
+	    		android:hint="@string/hint_fixer_not_right"
+	    		android:inputType="textMultiLine" 
+    			android:minLines="5" 
+    			android:gravity="top|left" 
+    			android:textColor="@color/black"
+    			android:paddingTop="10dp"
+    			android:paddingLeft="13dp"
+    			android:maxLines="10"
+	    		android:background="@drawable/editext_grey_stroke"/>
+		
+		<Button 
+			    android:id="@+id/button_reviewSubmit"
+			    android:layout_width="match_parent"
+	    		android:layout_height="50dp"
+	    		android:layout_marginTop="@dimen/margin_normal"
+	    		android:layout_marginBottom="@dimen/margin_normal"
+	    		android:background="@drawable/green_button_rounded_corners"
+       		    android:text="@string/submit"
+       		    android:textStyle="bold"
+       		    android:textColor="@color/white"
+       		    android:textSize="18sp"/>
+		
+		</LinearLayout>
+</LinearLayout>

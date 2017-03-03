@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+            
+           <ImageView
+            android:id="@+id/notification_unread"
+            android:layout_width="@dimen/track_your_fix_width"
+            android:layout_height="@dimen/track_your_fix_height"
+            android:padding="@dimen/small_padding"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/green_dot"
+            android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:layout_weight="7"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/notification_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:text="Note added to fix#12345"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/notification_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notification_text"
+                    android:text="12/2/15"
+                    android:textColor="#49A582"
+                    android:textStyle="normal" />
+
+            <!--  <TextView
+                    android:id="@+id/notification_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/notification_date"
+                    android:layout_below="@+id/notification_text"
+                    
+                    android:text="11:14"
+                    android:textColor="@color/text_color"
+                    android:textStyle="normal" /> -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/notification_date"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/view_grey_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/markas_read_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#49A582"
+            android:orientation="vertical"
+             android:gravity="center_vertical"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#49A582"
+                android:gravity="center"
+                android:text="Mark\n as Read"
+                android:textColor="@color/white" />
+
+           <!--  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#49A582"
+                android:gravity="center"
+                android:text="as Read"
+                android:textColor="@color/white" /> -->
+          
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

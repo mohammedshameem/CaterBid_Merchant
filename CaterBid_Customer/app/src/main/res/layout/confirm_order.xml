@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/custom_action_bar" /> -->
+
+
+    <!--
+         <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#EAEAEA"
+        android:fillViewport="true" >
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#EAEAEA"
+        android:orientation="vertical"
+        android:weightSum="16.5" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_weight=".3"
+                android:src="@drawable/location" />
+
+            <EditText
+                android:id="@+id/postalcode"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.7"
+                android:background="@drawable/edittext_rounded_edge"
+                android:cursorVisible="true"
+                android:gravity="center|left"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <!--
+                 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:visibility="invisible"
+                    android:src="@drawable/calender" />
+
+                <EditText
+                    android:id="@+id/blocknumber"
+                    android:layout_width="0dp"
+                       android:cursorVisible="true"
+                     android:singleLine="true"
+                     android:paddingLeft="8dp"
+                    android:layout_height="fill_parent"
+                     android:textCursorDrawable="@null"
+                    android:layout_weight="1.7"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext_rounded_edge"
+                    android:gravity="center|left" />
+            </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight=".3"
+                android:src="@drawable/calender" />
+
+            <EditText
+                android:id="@+id/datepicker"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.7"
+                android:background="@drawable/edittext_rounded_edge"
+                android:cursorVisible="true"
+                android:gravity="center|left"
+                android:textSize="15sp"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1.05"
+            android:background="@color/dark_green"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                style="@style/CustomTextStyle_white_without_bold"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tellmoreaboutfix"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                style="@style/CustomTextStyle_black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1.3"
+                android:gravity="right|center"
+                android:text="@string/areyoulooking"
+                android:textColor="@color/textcolor_light"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner_jobsubcategory"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:background="@drawable/dropdown_image"
+                android:gravity="left"
+                android:hint="@string/areyoulooking"
+                android:paddingLeft="1dp"
+                android:paddingRight="32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="3.2"
+            android:background="@drawable/editext_grey_stroke"
+            android:gravity="top" >
+
+            <EditText
+                android:id="@+id/edittext_jobdetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/moredetail"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_insert"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1.6"
+            android:background="@drawable/green_stroke_with_round_edge"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <ImageView
+                android:id="@+id/test"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:src="@drawable/insertimage" />
+
+            <TextView
+                style="@style/CustomTextStyle_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/insertimage"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1" >
+            </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="*"
+                    android:textColor="@color/dark_green"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pic_speaks"
+                    android:textColor="@color/textcolor_light" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/upload_one"
+                android:textColor="@color/textcolor_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_weight="2.5" >
+
+            <com.xminds.easyhomefix.horizontallistview.HorizontalListView
+                android:id="@+id/listview_imageup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#EAEAEA"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_findfixers"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/green_button_rounded_corners"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/CustomTextStyle_white_without_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/findfixers" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- </ScrollView> -->
+
+</LinearLayout>

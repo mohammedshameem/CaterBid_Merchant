@@ -1,0 +1,488 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:id="@+id/linear_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10" >
+<!-- <include layout="@layout/custom_action_bar"/> -->
+
+     <LinearLayout
+        android:id="@+id/landing_page_icon_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/landing_page_icon"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:src="@drawable/landing_page_icon"
+            android:visibility="visible" />
+
+       <LinearLayout
+            android:id="@+id/select_fix_category_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/select_fix_category_bg"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:id="@+id/select_fix_category_app_icon_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/select_fix_category_app_icon"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/app_icon_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_fix_category_text_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/select_fix_category_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/select_fix_category"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_fix_category_icons_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.95"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/select_fix_category_icons_layout_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="8" >
+
+                    <LinearLayout
+                        android:id="@+id/select_fix_category_ac_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/select_fix_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                         >
+
+                        <ImageView
+                            android:id="@+id/select_fix_category_ac_icon"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            
+                            android:src="@drawable/ac_icon"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/select_fix_category_ac_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_fix_category_ac"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/select_fix_category_plumbing_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/select_fix_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/select_fix_category_plumbing_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/plumbing_icon"
+                            
+                             android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/select_fix_category_plumbing_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_fix_category_plumbing"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/select_fix_category_electrician_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/select_fix_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/select_fix_category_electrician_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/wiring_icon"
+                            
+                           android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/select_fix_category_electrician_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_fix_category_electrician"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" 
+                            
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/select_fix_category_painting_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/select_fix_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/select_fix_category_painting_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/painting_icon" 
+                           android:padding="5dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/select_fix_category_painting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_fix_category_painting"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" 
+                           
+                           />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_fix_category_icons_layout_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    
+                    
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="8" >
+
+                    <LinearLayout
+                        android:id="@+id/select_fix_category_carpenter_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/select_fix_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/select_fix_category_carpenter_icon"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/carpenter_icon" 
+                           android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/select_fix_category_carpenter_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_fix_category_carpenter"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/select_fix_category_locksmith_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/select_fix_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/select_fix_category_locksmith_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/locksmith_icon"
+                           android:padding="5dp" />
+
+                        <TextView
+                            android:id="@+id/select_fix_category_locksmith_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_fix_category_locksmith"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" 
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/select_fix_category_pestCtrl_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/select_fix_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/select_fix_category_pestCtrl_icon"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/pest_control_icon" 
+                           android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/select_fix_category_pestCtrl_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_fix_category_pest_ctrl"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/select_fix_category_sanitization_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/select_fix_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/select_fix_category_sanitization_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/sanitization_icon" 
+                           android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/select_fix_category_sanitization_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/select_fix_category_sanitization"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/general_works_button"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="23dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.6"
+                android:background="@drawable/select_fix_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/general_works_button_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/general_works_icon"
+                     />
+
+                <TextView
+                    android:id="@+id/general_works_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="General Works"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/landing_page_button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_marginTop="-7dp" >
+
+        <LinearLayout
+            android:id="@+id/list_your_fix_button"
+            android:layout_width="fill_parent"
+            android:layout_height="9.5dp"
+            android:layout_weight="3.1"
+            
+                 android:layout_marginBottom="1dp"
+            android:background="@drawable/green_button_rounded_corners"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/list_your_fix_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="List your Fix!"
+                style="@style/shadow_text"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10"
+             android:layout_marginBottom="1dp" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4.35"
+                android:background="@color/view_grey_color" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:text="OR"
+                android:textColor="#3E3E3E"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4.35"
+                android:background="@color/view_grey_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keep_track_your_fix_button"
+            android:layout_width="fill_parent"
+            android:layout_height="9.5dp"
+            android:layout_weight="3.1"
+            android:background="@drawable/green_button_rounded_corners"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/keep_track_your_fix_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/shadow_text"
+                android:textStyle="bold"
+                android:text="Keep Track of your Fixes!"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="-2dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/need_help_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Need help?"
+                android:textColor="@color/need_hlp_blue"
+                android:textSize="17sp"
+                 />
+
+            <View
+                android:layout_width="83dp"
+                android:layout_height="1dp"
+                android:background="@color/need_hlp_blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

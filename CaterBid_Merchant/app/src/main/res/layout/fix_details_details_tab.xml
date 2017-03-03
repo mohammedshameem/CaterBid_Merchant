@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_grey_bg"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:id="@+id/details_tab_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/blurred_image_big"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="5" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.2"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="@dimen/margin_xsmall"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:orientation="vertical" >
+
+ <com.pkmmte.circularimageview.CircularImageView
+                    android:id="@+id/image_avatar_review"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:src="@drawable/avtar_big" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textviewCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Sundaramorthy Seng Pte Ltd"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textviewTotalFix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="192"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textviewfix_completed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="@string/fixes_completed"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payment_status_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/payment_status_btn_bg"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/payment_status_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/dark_green_rounded_corner"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp" >
+
+                <TextView
+                    android:id="@+id/payment_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="QUOTE: "
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                 <TextView
+                    android:id="@+id/payment_status_text_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="$125"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+        </LinearLayout>
+         <LinearLayout 
+            android:id="@+id/rating_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="7dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:gravity="left|center"
+               >
+            <TextView 
+                android:id="@+id/textview_rating"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:layout_marginRight="@dimen/margin_normal" 
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Rating"/>
+           <RatingBar
+                    android:id="@+id/ratingReview_paid"
+                    style="@style/StarRatingBarBig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:rating="4.0"
+                    android:stepSize="1.0" />
+           </LinearLayout>
+           <LinearLayout 
+            android:id="@+id/request_review"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:background="@drawable/select_fix_bg"
+            android:gravity="center"
+            android:weightSum="1"
+               >
+             <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/request_review_icn"
+                   android:layout_marginRight="10dp"
+                       />
+           <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="Request Review"
+               />
+           </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fix_status_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="7dp"
+            android:visibility="visible"
+            android:background="@drawable/green_button_rounded_corners"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fix_completed"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Fix Completed!"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/payment_request_accept_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:weightSum="2"
+            android:orientation="vertical" >
+
+	            <LinearLayout
+		            android:id="@+id/request_payment_layout"
+		            android:layout_width="fill_parent"
+		            android:layout_height="50dp"
+		            android:visibility="visible"
+		            android:background="@drawable/green_button_rounded_corners"
+		            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/request_payment_text"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:gravity="center"
+	                android:text="Request Payment"
+	                android:textColor="@color/white"
+	                android:textSize="18sp"
+	                android:textStyle="bold" />
+	        </LinearLayout>
+	         <LinearLayout
+	            android:id="@+id/accept_cash_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:visibility="visible"
+	            android:layout_marginTop="@dimen/margin_normal"
+	            android:background="@drawable/green_button_rounded_corners"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/accept_cash_text"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:gravity="center"
+	                android:text="Accepted Cash"
+	                android:textColor="@color/white"
+	                android:textSize="18sp"
+	                android:textStyle="bold" />
+	        </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_id"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_margin="7dp"
+            android:background="@color/view_dark_grey" />
+
+        <LinearLayout
+            android:id="@+id/edit_details_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="7dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="In case you forgot..."
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/edit_details_button_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right|center"
+                android:visibility="invisible"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/edit_detals_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="Edit Details"
+                    android:textColor="@color/dark_green"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_tab_fix_item_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:id="@+id/fix_details_item_img"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/details_tab_fix_item_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/ac_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fix_details_item_layout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1.75"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/fix_details_item_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/white_button_rounded_corners"
+                    android:editable="false"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_tab_fix_item_address_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/details_tab_fix_item_address_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/location" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fix_details_item_address_layout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1.75"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/fix_details_item_address_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/white_button_rounded_corners"
+                    android:editable="false"
+                    android:gravity="left|center"
+                    android:text="Blk 308, cranberra Road, S750308"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_tab_fix_item_date_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/details_tab_fix_item_date_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/calender" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fix_details_item_date_layout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1.75"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/fix_details_item_date_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/white_button_rounded_corners"
+                    android:editable="false"
+                     android:text="12/05/2015  12:00 am to 14:00"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                     android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        
+        
+        
+        
+        
+        
+        
+        
+             <LinearLayout
+            android:id="@+id/details_tab_fix_item_image_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+            
+                 
+           <com.xminds.easyhomefix_merchant.horizontallistview.HorizontalListView
+            android:id="@+id/Horizondallistview"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:background="#EAEAEA" 
+            android:visibility="visible"
+            />
+             <TextView 
+                 android:id="@+id/emptyimages"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="There are no images for this job."
+                 android:paddingLeft="50dp"
+                 android:visibility="gone"
+                 android:textColor="@color/black"
+                 
+                 />
+           
+
+          <!--   <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/details_tab_fix_item_image_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ac_sample_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/details_tab_fix_item_image_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="@drawable/ac_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/details_tab_fix_item_image_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="@drawable/ac_sample_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/details_tab_fix_item_image_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:background="@drawable/ac_image" />
+            </LinearLayout>
+            
+              <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/details_tab_fix_item_image_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ac_sample_image" />
+            </LinearLayout> -->
+        
+        
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/details_tab_fix_item_additional_details_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".75"
+                 android:layout_marginLeft="7dp"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/details_tab_fix_item_additional_details_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Additional Details:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                 android:layout_marginLeft="7dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/details_tab_fix_item_additional_details_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Lorem ipsum dolor sit amet, consecutor adipisicing lorem ipsum dolor sit amet, consecutor adipisicing"
+                    android:textColor="@color/dark_grey_for_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancel_fix_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:visibility="gone"
+            android:background="@drawable/grey_button_rounded_corner"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Cancel Fix"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/review_fixer_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/dark_green"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+            android:id="@+id/review_fixer_image_layout"
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginRight="7dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/whiteroundwithtick"  />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/review_fixer_text_layout"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mark Fix as completed!"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+  
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

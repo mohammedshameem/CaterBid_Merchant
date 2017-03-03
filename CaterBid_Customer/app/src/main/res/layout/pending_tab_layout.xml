@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" > 
+ <android.support.v4.widget.SwipeRefreshLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipetorefresh_pending"
+    android:background="#FFFFFF"
+    android:orientation="vertical" > 
+ 
+    <ListView
+        android:id="@+id/pending_list"
+        android:layout_width="fill_parent"
+        android:layout_height="480dp"
+        android:divider="@null"
+        android:visibility="visible" >
+    </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_pending_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/empty_pending_layout"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pending_loading_more"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pending_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-50dp"
+        android:background="#77ffffff"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!--
+             <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Loading more..." />
+        -->
+
+        <ProgressBar
+            android:id="@+id/progress_loading"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EasyHomeFix</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="select_fix_category">Select Fix Category</string>
+    <string name="select_fix_category_ac">Air-Con.</string>
+    <string name="select_fix_category_plumbing">Plumbing</string>
+    <string name="select_fix_category_electrician">Electrician</string>
+    <string name="select_fix_category_painting">Painting</string>
+    <string name="select_fix_category_carpenter">Carpenter</string>
+    <string name="select_fix_category_locksmith">Locksmith</string>
+    <string name="select_fix_category_pest_ctrl">Pest Control</string>
+    <string name="select_fix_category_sanitization">Sanitization</string>
+    <string name="reviews">Reviews</string>
+    <string name="fixes_completed">Fixes Completed</string>
+
+    <!-- Custom Action Bar -->
+
+    <string name="track_your_fix">Track Your Fix</string>
+    <string name="address">Address</string>
+    <string name="postalcode">Postal Code: </string>
+    <string name="postalcode_hint">Enter your 6 digit Postal Code</string>
+    <string name="floorno"> Floor No:</string>
+    <string name="unitno"> Unit No:</string>
+    <string name="ifnecessary">If necessary</string>
+    <string name="moredetail">The more detail you provide, the more accurate your Fixer will be! </string>
+
+    <!-- Track Your Fix -->
+    <string name="One_step_closer_to_getting_your">One step closer to getting your</string>
+    <string name="Home_Fixed">Home Fixed!</string>
+    <string name="Verify_Phone_Number">Next: Verify Phone Number</string>
+    <string name="hint_Email_Address">Email Address</string>
+    <string name="hint_First_name">First name</string>
+    <string name="hint_Last_name">Last name</string>
+    <string name="hint_enter_password">Enter Password</string>
+    <string name="Updatepassword">Update Password</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="repeatpassword">Repeat Password</string>
+    <string name="Updatedetails">Update Details</string>
+    <string name="Uploadimages">Upload image</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="tellmoreaboutfix">Tell us more about your Fix</string>
+    <string name="areyoulooking">Are you looking for</string>
+    <string name="insertimage">Insert Image(s)</string>
+    <string name="pic_speaks">Picture speaks a thousand words!</string>
+    <string name="upload_one">Upload one to make your description clearer.</string>
+
+    <!-- Track Your Fix -->
+    <string name="editedetails">Edit Details</string>
+    <string name="changepassword">Change Password</string>
+    <string name="mobilenotifications">Mobile Notifications</string>
+    <string name="emailnotification">Email Notifications</string>
+    <string name="logout">Log Out</string>
+    <string name="paid">Paid: </string>
+    <string name="cancelled">Cancelled</string>
+    <string name="cancel">Cancel</string>
+    <string name="booking"> Booking: </string>
+    <string name="pending_payment">Pending payment:</string>
+    <string name="rating">Rating </string>
+    <string name="You_have_no">You have no</string>
+    <string name="Completed">Completed or</string>
+    <string name="Cancelled">Cancelled Fixes</string>
+    <string name="Ongoing">Ongoing Fixes</string>
+    <string name="Pending">Pending Fixes</string>
+    <string name="select_picture">Select Picture</string>
+
+    <string name="takephoto">Take Photo or video</string>
+    <string name="photolibrary">Photo Library</string>
+
+    <!-- Entert OTP -->
+    <string name="verify">We need to verify your phone</string>
+    <string name="in_case">number in case Customer Service</string>
+    <string name="needs_to">needs to call you.</string>
+    <string name="enter_OTP">Please enter OTP</string>
+    <string name="hint_otp">i.e.1234</string>
+    <string name="dont_worry">Don\'t worry,  we will never share your personal data</string>
+    <string name="next">Next</string>
+    <string name="need_number">We need your phone number</string>
+    <string name="to_give_you">to give you Personalized</string>
+    <string name="customer_service">Customer Service.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="phone_hint">Mobile Number</string>
+    <string name="findfixers">Find Fixers!</string>
+    <string name="close">Close</string>
+
+    <!-- Sign up and Login Page -->
+    <string name="signup">SIGN UP</string>
+    <string name="login">LOG IN</string>
+    <string name="login_btn_text">Log in</string>
+    <string name="next_text">Next</string>
+    <string name="signup_text">Sign up to get your Home Fixed \n by Verified and Rated Fixers!</string>
+    <string name="login_text">Login to get your Home Fixed by Rated and Verified Fixers!</string>
+ 
+    <string name="editdetails">Edit Details</string>
+    <string name="rate_your">Rate your experience</string>
+    <string name="review">Review</string>
+    <string name="fixer_not_right">Tell us why \n this Fixer is not right?</string>
+    <string name="too_expensive">Too \n Expensive</string>
+    <string name="wrong_category">Wrong \n Category</string>
+    <string name="not_trustworthy">Not\nTrustworthy</string>
+    <string name="not_competent">Not \n Competent</string>
+    <string name="hint_fixer_not_right">Others&#8230; (Optional)</string>
+
+    <string-array name="dummy">
+        <item>Dust Clearing</item>
+        <item>Cleaning</item>
+    </string-array>
+    <!-- Edit Fix Details -->
+    <string name="address_text">Address</string>
+    <string name="edit_text">Save</string>
+    <string name="postal_code">Postal Code:</string>
+    <string name="postal_code_hint">Enter your 6 digit Postal Code</string>
+    <string name="floor_num_text">Floor No:</string>
+    <string name="floor_num_text_hint">i.e. 02</string>
+    <string name="unit_num_text_hint">i.e. 44</string>
+    <string name="unit_num_text">Unit No:</string>
+    <string name="are_u_looking_for">Are you looking for</string>
+    <string name="details_hint">The more detail you provide, The more accurate your Fixer will be!</string>
+    <string name="just_a_min_text">Just a moment!</string>
+    <string name="did_u_test_fixer_text">Did you test with your Fixer before making these changes</string>
+    <string name="did_u_test_fixer_yes_text">Yes, make these changes!</string>
+    <string name="did_u_test_fixer_no_text">No, let me do that now.</string>
+
+    <!-- collect floor and unit number -->
+    <string name="if_you_are_living_text">if you are living in an apartment,</string>
+    <string name="please_give_us_your_floor_text">please give us your floor</string>
+    <string name="and_unit_no_text">and unit number.</string>
+    <string name="Floor_No_text">Floor No:</string>
+    <string name="Unit_No_text">Unit No:</string>
+    <string name="Submit">Submit</string>
+    <string name="cancel_butoon">Cancel</string>
+
+    <!-- collect account details -->
+    <string name="create_an_account_text">Create an account</string>
+    <string name="tract_your_payment_text">to track your payment details.</string>
+    <string name="confirm_password">Confirm password</string>
+
+    <!-- Edit Details Dialog -->
+    <string name="just_a_moment_text">Just a moment!</string>
+    <string name="did_you_test_with_your_fixer_text">Did you test with your fixer text</string>
+    <string name="before_making_these_changes_text">before making these changes</string>
+    <string name="yes_make_these_changes_text"> Yes,make these changes!</string>
+    <string name="no_let_me_do_that_now_text">No, let me do that now.</string>
+    <!-- Fix -->
+
+    <string name="fix_add_contact">Add others to keep them informed about the Fix! (Swipe to hide)</string>
+    <string name="cash">Cash</string>
+    <string name="creditcard_or_paypal">Credit Card / Paypal</string>
+    <string name="how_do_wish_to_make">How do you wish to make </string>
+    <string name="payment_to_your_fixer">Payment to your Fixer.</string>
+    <string name="share_the_knowledge">Share the Knowledge !</string>
+    <string name="review_your_fixer">Review your	Fixer!</string>
+
+    <string-array name="spinnervalue">
+      <item>Dust Clearing</item>
+        <item>Cleaning</item>
+    </string-array>
+    <string-array name="spinner_values"
+        >
+         <item>+65</item>
+          <item>+91</item>
+          <item>+1</item>
+    </string-array>
+
+    <!-- PERSONALIZED CUSTOMER SERVICE -->
+    <string name="submit_button_text">Submit</string>
+    <string name="we_need_text">We need your name</string>
+    <string name="to_give_you__text">to give you Personalized</string>
+    <string name="customer_service_text">Customer Service</string>
+    <string name="facebook_app_id">839505822800440</string>
+  
+  <string name="customer">customer</string>
+    
+<string name="title_activity_main">Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+</resources>

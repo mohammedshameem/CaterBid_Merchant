@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <!-- <include layout="@layout/custom_action_bar" /> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.5"
+        android:gravity="center" >
+
+        <com.xminds.easyhomefix.horizontallistview.HorizontalListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:background="#EAEAEA" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="8.5"
+        android:orientation="vertical"
+        android:weightSum="12" >
+        
+         <LinearLayout
+            android:id="@+id/address_picker_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_weight="1.5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1.5" >
+
+            <Spinner
+                android:id="@+id/addrss_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selectdateandtime"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:popupBackground="@drawable/spinner_dropdown_background_selector"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/dark_green"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/address"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1.75" >
+
+            <TextView
+                style="@style/CustomTextStyle_black"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".75"
+                android:gravity="left|center"
+                android:text="@string/postalcode"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edittext_postalcode"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/editext_grey_stroke"
+                android:nextFocusDown="@+id/edt_txt_floorno"
+                android:hint="@string/postalcode_hint"
+                android:inputType="number"
+				android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" 
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@color/view_dark_grey" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_weight="2.2"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <TextView
+                    style="@style/CustomTextStyle_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:text="@string/floorno" />
+
+                <EditText
+                    android:id="@+id/edt_txt_floorno"
+                    android:layout_width="160dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/editext_grey_stroke"
+                    android:gravity="left|center"
+                    android:nextFocusRight="@+id/edt_txt_unitno"
+                           android:textCursorDrawable="@null" 
+
+                    android:inputType="number"
+                    android:textColor="@color/black" 
+                    android:imeOptions="actionDone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <TextView
+                    style="@style/CustomTextStyle_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:text="@string/unitno" />
+
+                <EditText
+                    android:id="@+id/edt_txt_unitno"
+                    android:layout_width="160dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/editext_grey_stroke"
+                    android:gravity="left|center"
+                    android:hint="@string/ifnecessary"
+                             android:imeOptions="actionDone"
+                           android:textCursorDrawable="@null" 
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@color/view_dark_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/datepicker_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/datepicker_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.9"
+                android:background="@drawable/selectdateandtime"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="Please select date"
+                android:textColor="@color/dark_green"
+                android:textColorHint="#49A582"
+                android:textStyle="bold" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.1"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@color/view_dark_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timepicker_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1.5" >
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selectdateandtime"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:popupBackground="@drawable/spinner_dropdown_background_selector"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_next"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/green_button_rounded_corners"
+            android:gravity="center"
+            
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nextbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".4"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout> -->
+    </LinearLayout>
+
+</LinearLayout>

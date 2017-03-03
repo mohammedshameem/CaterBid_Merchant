@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipetorefresh_completed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+        <ListView
+            android:id="@+id/completed_cancelled_list"
+            android:layout_width="fill_parent"
+            android:layout_height="480dp"
+            android:background="@color/white"
+            android:divider="@null"
+            android:visibility="visible" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_completed_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/empty_completed_cancelled_layout"
+            android:gravity="center" />
+    </LinearLayout>
+    <!--
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-100dp"
+        android:background="@drawable/white_button_rounded_corners"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/completed_loading_more"
+        android:layout_below="@+id/completed_cancelled_list"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Loading more..." />
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/completed_loading_more"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/completed_cancelled_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-100dp"
+        android:background="#77ffffff"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progress_loading"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+    </RelativeLayout>
+
+</LinearLayout>
