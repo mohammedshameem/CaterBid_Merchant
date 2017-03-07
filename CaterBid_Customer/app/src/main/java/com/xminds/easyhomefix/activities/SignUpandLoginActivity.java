@@ -221,10 +221,10 @@ public class SignUpandLoginActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				/*Intent i = new Intent(SignUpandLoginActivity.this,
-						GoogleLoginActivity.class);
+				Intent i = new Intent(SignUpandLoginActivity.this,
+						GoogleloginActivity.class);
 				startActivity(i);
-				finish();*/
+				finish();
 			}
 		});
 
@@ -246,10 +246,10 @@ public class SignUpandLoginActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				/*Intent i = new Intent(SignUpandLoginActivity.this,
-						GoogleLoginActivity.class);
+				Intent i = new Intent(SignUpandLoginActivity.this,
+						GoogleloginActivity.class);
 				startActivity(i);
-				finish();*/
+				finish();
 			}
 		});
 

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "367842739261",
+    "firebase_url": "https://caterbid-user.firebaseio.com",
+    "project_id": "caterbid-user",
+    "storage_bucket": "caterbid-user.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367842739261:android:b78565fe73579f2f",
+        "android_client_info": {
+          "package_name": "com.caterbid.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367842739261-1kmaus5794i41ok2f59ahn17r1on4lbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZPJibCWRXrUMolHoFM-O7XscbzxmCDOQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367842739261-1kmaus5794i41ok2f59ahn17r1on4lbh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "367842739261-94a7she3k30bhbp19oln1i9q7s858770.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.xminds.caterbiduser"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

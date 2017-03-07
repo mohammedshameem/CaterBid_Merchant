@@ -100,7 +100,6 @@ public class ConfirmOrderActivity extends BaseActivity {
 	private String postalcode;
 	private String catid;
 	private String formatedaddress;
-	private String blockno;
 	private String floorNo;
 	private String unitNo;
 	private String jobid;

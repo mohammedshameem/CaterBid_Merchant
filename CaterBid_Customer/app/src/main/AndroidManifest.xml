@@ -245,7 +245,7 @@
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
 		<activity
-            android:name="com.xminds.easyhomefix.activities.GoogleLoginActivity"
+            android:name="com.xminds.easyhomefix.activities.GoogleloginActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>

@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.easyhomefix.customer"
+        applicationId "com.caterbid.customer"
         minSdkVersion 16
         targetSdkVersion 21
     }
@@ -32,4 +32,5 @@ dependencies {
     compile project(path: ':library_slide_menu')
     compile project(path: ':updatedAsyncLIb')
     compile project(path: ':facebook')
+    apply plugin: 'com.google.gms.google-services'
 }
