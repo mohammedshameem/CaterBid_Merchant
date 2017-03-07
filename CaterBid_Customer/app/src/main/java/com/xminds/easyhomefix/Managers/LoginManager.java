@@ -3,10 +3,8 @@ package com.xminds.easyhomefix.Managers;
 import java.io.ByteArrayInputStream;
 import java.util.HashMap;
 import java.util.Map;
-
 import android.app.Activity;
 import android.util.Log;
-
 import com.google.gson.Gson;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -32,10 +30,8 @@ public class LoginManager implements ApiConstants {
 	public static LoginManager getInstance() {
 
 		if (loginManager == null) {
-
 			loginManager = new LoginManager();
 		}
-
 		return loginManager;
 	}
 
