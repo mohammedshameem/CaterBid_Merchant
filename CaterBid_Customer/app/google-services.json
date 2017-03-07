@@ -29,20 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "367842739261-1kmaus5794i41ok2f59ahn17r1on4lbh.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "367842739261-94a7she3k30bhbp19oln1i9q7s858770.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.xminds.caterbiduser"
-              }
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
