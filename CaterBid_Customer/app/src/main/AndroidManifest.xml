@@ -308,12 +308,10 @@
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <category android:name="com.xminds.easyhomefix" />
+                <category android:name="com.caterbid.customer" />
+                <!--<category android:name="com.xminds.easyhomefix" />-->
             </intent-filter>
         </receiver>
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="08db167f06f0fc0160319af0ca51c7a6d491d748" />
     </application>
 
 </manifest>

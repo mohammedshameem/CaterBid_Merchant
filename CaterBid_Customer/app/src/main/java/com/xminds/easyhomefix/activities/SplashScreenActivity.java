@@ -115,7 +115,7 @@ public class SplashScreenActivity extends Activity {
 
     public void getRegId() {
 
-        final String PROJECT_NUMBER = "162829272688";
+        final String PROJECT_NUMBER = "367842739261";
 
         new AsyncTask<Void, Void, String>() {
             @Override

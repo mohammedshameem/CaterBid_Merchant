@@ -56,7 +56,6 @@ public class GcmMessageHandler extends IntentService {
    }
    @Override
    protected void onHandleIntent(Intent intent) {
-	   
        Bundle extras = intent.getExtras();
        mes = extras.getString("message");
        jid = extras.getString("jId");
@@ -80,7 +79,7 @@ public class GcmMessageHandler extends IntentService {
 		      
 		      NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
 		      .setSmallIcon(R.drawable.app_icon)
-		      .setContentTitle("EasyHomeFix")
+		      .setContentTitle("CaterBid")
 		      .setContentText(extras.getString("message"))
 		      .setAutoCancel(true)
 		      .setContentIntent(pendingIntent)
@@ -194,7 +193,7 @@ public class GcmMessageHandler extends IntentService {
         
         ComponentName componentInfo = taskInfo.get(0).topActivity;
         Log.e("@@@@@@@@@@@@@@","EEEE: "+componentInfo.getPackageName());
-        if (componentInfo.getPackageName().equalsIgnoreCase("com.easyhomefix.customer")) {
+        if (componentInfo.getPackageName().equalsIgnoreCase("com.caterbid.customer")) {
             return true;
         } else {
            return false;
