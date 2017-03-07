@@ -31,7 +31,7 @@ public interface ApiConstants {
 	String NOTCOMPETENT="Not Competent";
 
 
-	static final String BASE_URL = "http://api-s.easyhome.xminds.in/v1/"; // STAGING
+	static final String BASE_URL = "http://api-s.caterbid.xminds.com/v1/"; // STAGING
 	
 	//static final String BASE_URL = "http://api.easyhomefix.com/v1/"; //PRODUCTION
 
