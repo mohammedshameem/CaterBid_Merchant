@@ -147,12 +147,7 @@ public class LandingPageActivity extends BaseActivity {
 
 				@Override
 				public void onClick(View v) {
-					
-					Intent i = new Intent(LandingPageActivity.this,
-							TrackYourFixFragmentTabHostActivity.class);
-					EasyHomeFixApp.setCategoryNameDefaultTab(Constants.PENDING);
-					
-					startActivity(i);
+                    Intent i = new Intent(LandingPageActivity.this, TrackYourFixFragmentTabHostActivity.class);EasyHomeFixApp.setCategoryNameDefaultTab(Constants.PENDING);startActivity(i);
 				}
 			});
 		}
@@ -161,27 +156,11 @@ public class LandingPageActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				if (landing_page_icon.getVisibility() == View.VISIBLE) {
-					/*
-					 * landing_page_icon.setVisibility(View.GONE);
-					 * TranslateAnimation animation=new TranslateAnimation(0, 0,
-					 * 0, -(landing_page_icon_layout.getHeight()));
-					 * animation.setDuration(1500);
-					 * animation.setFillAfter(true);
-					 * select_fix_category_layout.setVisibility(View.VISIBLE);
-					 * select_fix_category_layout.startAnimation(animation);
-					 */
+					Intent i = new Intent(LandingPageActivity.this,
+							ListYourFixesActivity.class);
+					i.putExtra("name", "ac");
+                    startActivity(i);
 
-					landing_page_icon.setVisibility(View.GONE);
-					new SlideInAnimation(select_fix_category_layout)
-							.setDirection(Animation.DIRECTION_DOWN)
-							.setDuration(1000).animate();
-					select_fix_category_layout.setVisibility(View.VISIBLE);
-				} else {
-
-					select_fix_category_layout.setVisibility(View.GONE);
-					landing_page_icon.setVisibility(View.VISIBLE);
-				}
 			}
 		});
 
@@ -198,10 +177,10 @@ public class LandingPageActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent(LandingPageActivity.this,
+		/*		Intent i = new Intent(LandingPageActivity.this,
 						ListYourFixesActivity.class);
 				i.putExtra("name", "ac");
-				startActivity(i);
+				startActivity(i);*/
 
 			}
 		});
