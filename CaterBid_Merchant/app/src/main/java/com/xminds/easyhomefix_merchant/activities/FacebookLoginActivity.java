@@ -79,8 +79,7 @@ public class FacebookLoginActivity extends Activity {
 		callbackManager = CallbackManager.Factory.create();
 		LoginManager.getInstance().logInWithReadPermissions(
 				this,
-				Arrays.asList("public_profile", "user_friends", "email",
-						"basic_info"));
+				Arrays.asList("public_profile", "user_friends", "email"));
 
 		LoginManager.getInstance().registerCallback(callbackManager,
 				new FacebookCallback<LoginResult>() {
